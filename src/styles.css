@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,500&display=swap");
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+mustard: #FFA952;
+*/
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 10px; }
+
+h1 {
+  font-size: 4.8rem; }
+
+/*# sourceMappingURL=styles.css.map */
