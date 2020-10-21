@@ -1,0 +1,24 @@
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: #FFA952;
+	color: #ffffff;
+
+	h1 {
+		color: #ffffff;
+	}
+
+	.footer-section {
+		padding: 2rem 0 4rem 0;
+
+		nav {
+
+			a {
+				display: block;
+				color: #ffffff;
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+			}
+		}
+	}
+}
