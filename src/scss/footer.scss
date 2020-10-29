@@ -1,8 +1,7 @@
 footer {
-	display: flex;
-	justify-content: space-around;
 	background-color: #FFA952;
 	color: #ffffff;
+	padding: 10%;
 
 	h1 {
 		color: #ffffff;
@@ -20,5 +19,11 @@ footer {
 				line-height: 2.4rem;
 			}
 		}
+	}
+
+	@media (min-width: 960px) {
+		padding: 0%;
+		display: flex;
+		justify-content: space-around;
 	}
 }

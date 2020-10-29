@@ -13,6 +13,8 @@ body {
   padding: 0; }
 
 html {
+  margin: 0;
+  padding: 0;
   font-size: 10px; }
 
 button {
@@ -24,10 +26,9 @@ button {
     font-weight: 700; }
 
 footer {
-  display: flex;
-  justify-content: space-around;
   background-color: #FFA952;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 10%; }
   footer h1 {
     color: #ffffff; }
   footer .footer-section {
@@ -37,6 +38,11 @@ footer {
       color: #ffffff;
       font-size: 1.6rem;
       line-height: 2.4rem; }
+  @media (min-width: 960px) {
+    footer {
+      padding: 0%;
+      display: flex;
+      justify-content: space-around; } }
 
 header {
   display: flex;
@@ -55,48 +61,62 @@ header {
 
 .section-one {
   background-image: url("images/hero.jpg");
-  height: 100vh;
-  margin-top: -12rem;
-  padding-left: 50%; }
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -9rem;
+  padding: 8rem 10% 2.5rem; }
   .section-one button {
     border: 2px solid #ffffff;
     background-color: white; }
-    .section-one button a {
-      font-size: 2.4rem; }
+    @media (min-width: 768px) {
+      .section-one button a {
+        font-size: 2.4rem; } }
   .section-one h2 {
-    color: #ffffff;
-    padding-top: 60%; }
+    color: #ffffff; }
   .section-one p {
     color: #ffffff; }
+  @media (min-width: 1280px) {
+    .section-one {
+      padding: 8rem 0 8% 50%; }
+      .section-one h2 {
+        padding-top: 40%; } }
 
 .section-two {
   background-image: url("images/texture.jpg");
-  height: 60vh;
-  margin-top: -4rem;
-  padding-left: 10%; }
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 1rem 10%; }
   .section-two button {
     border: 2px solid #ffffff; }
     .section-two button a {
       color: #ffffff; }
   .section-two h2 {
-    color: #ffffff;
-    padding-top: 13%; }
+    color: #ffffff; }
   .section-two p {
     color: #ffffff; }
+  @media (min-width: 1280px) {
+    .section-two {
+      padding: 8rem 10%; } }
 
-.section-three {
-  display: flex; }
-  .section-three .section-three__left {
-    background-image: url("images/fit.jpg");
-    height: 60vh;
-    width: 55%;
-    padding-left: 10%;
-    margin: 0; }
-    .section-three .section-three__left h2 {
-      padding-top: 18%; }
-  .section-three .section-three__right {
-    width: 45%;
-    padding-left: 10%; }
+.section-three .section-three__left {
+  background-image: url("images/fit.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 3% 10%;
+  margin: 0; }
+
+.section-three .section-three__right {
+  padding-left: 10%; }
+  .section-three .section-three__right button {
+    margin-bottom: 6rem; }
+
+@media (min-width: 768px) {
+  .section-three {
+    display: flex; }
+    .section-three .section-three__left {
+      width: 55%; }
+    .section-three .section-three__right {
+      width: 45%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -107,8 +127,14 @@ h1 {
   font-size: 4.8rem; }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 2.4rem;
   font-weight: 700; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 3.6rem; } }
+  @media (min-width: 1280px) {
+    h2 {
+      font-size: 4.8rem; } }
 
 h3 {
   font-weight: 900;

@@ -1,33 +1,44 @@
 .section-one {
 	background-image: url("images/hero.jpg");
-	height: 100vh;
-	margin-top: -12rem;
-	padding-left: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: -9rem;
+	padding: 8rem 10% 2.5rem;
 
 	button {
 		border: 2px solid #ffffff;
 		background-color: rgba(255, 255, 255, 1);
 
 		a {
-			font-size: 2.4rem;
+
+			@media (min-width: 768px) {
+				font-size: 2.4rem;
+			}
 		}
 	}
 
 	h2 {
 		color: #ffffff;
-		padding-top: 60%;
 	}
 
 	p {
 		color: #ffffff;
 	}
+
+	@media (min-width: 1280px) {
+		padding: 8rem 0 8% 50%;
+
+		h2 {
+			padding-top: 40%;
+		}
+	}
 }
 
 .section-two {
 	background-image: url("images/texture.jpg");
-	height: 60vh;
-	margin-top: -4rem;
-	padding-left: 10%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 1rem 10%;
 
 	button {
 		border: 2px solid #ffffff;
@@ -39,31 +50,44 @@
 
 	h2 {
 		color: #ffffff;
-		padding-top: 13%;
 	}
 
 	p {
 		color: #ffffff;
 	}
+
+	@media (min-width: 1280px) {
+		padding: 8rem 10%;
+	}
 }
 
 .section-three {
-	display: flex;
 
 	.section-three__left {
 		background-image: url("images/fit.jpg");
-		height: 60vh;
-		width: 55%;
-		padding-left: 10%;
+		background-repeat: no-repeat;
+		width: 100%;
+		padding: 3% 10%;
 		margin: 0;
-
-		h2 {
-			padding-top: 18%;
-		}
 	}
 
 	.section-three__right {
-		width: 45%;
 		padding-left: 10%;
+
+		button {
+			margin-bottom: 6rem;
+		}
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+
+		.section-three__left {
+			width: 55%;
+		}
+
+		.section-three__right {
+			width: 45%;
+		}
 	}
 }
