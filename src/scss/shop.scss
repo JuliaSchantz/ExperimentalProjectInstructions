@@ -1,0 +1,68 @@
+.shop {
+	margin: 0 3rem;
+
+	.filter__list__container {
+		width: 315px;
+		display: block;
+		margin: 0 auto;
+
+		.filter__list {
+			padding: 0;
+		}
+
+		@media (min-width: 820px) {
+			margin: 0;
+		}
+	}
+
+	.products__container {
+
+		.product {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			border-radius: 20px;
+			width: 315px;
+			margin: 0 auto 2rem;
+			display: block;
+
+			.product__icons__container {
+				display: block;
+				margin: 0 auto;
+				width: 220px;
+
+				.product__icon {
+					margin: 2rem;
+				}
+			}
+		}
+
+		.tops {
+			display: block;
+		}
+
+		.bottoms {
+			display: block;
+		}
+
+		.shoes {
+			display: block;
+		}
+
+		@media (min-width: 820px) {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			max-width: 650px;
+			float: right;
+			margin-top: 2rem;
+		}
+
+		@media (min-width: 1200px) {
+			max-width: 1000px;
+		}
+	}
+
+	@media (min-width: 820px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}

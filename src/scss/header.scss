@@ -1,9 +1,22 @@
+.front {
+	margin-top: 0;
+	
+	h1 {
+		color: #ffffff;
+	}
+
+	a {
+		color: #ffffff;
+	}
+}
+
 header {
+	margin-top: 2rem;
 	display: flex;
 	justify-content: space-between;
 
 	h1 {
-		color: #ffffff;
+		color: #FFA952;
 		padding: 1rem 2rem;
 		margin: 0;
 	}
@@ -12,7 +25,7 @@ header {
 		padding: 2rem;
 
 		a {
-			color: #ffffff;
+			color: #000000;
 			font-size: 2.4rem;
 			font-weight: 500;
 			padding: 2rem;
