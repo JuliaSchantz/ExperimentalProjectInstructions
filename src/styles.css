@@ -71,11 +71,11 @@ header {
       padding: 2rem; }
 
 .section-one {
-  background-image: url("images/hero.jpg");
-  background-size: 100%;
+  background-image: url("images/hero-mobile.jpg");
+  background-size: 110%;
   background-repeat: no-repeat;
   margin-top: -9rem;
-  padding: 8rem 10% 2.5rem; }
+  padding: 12rem 10% 8rem; }
   .section-one button {
     border: 2px solid #ffffff;
     background-color: white; }
@@ -86,17 +86,20 @@ header {
     color: #ffffff; }
   .section-one p {
     color: #ffffff; }
+  @media (min-width: 768px) {
+    .section-one {
+      background-image: url("images/hero.jpg"); } }
   @media (min-width: 1280px) {
     .section-one {
-      padding: 8rem 0 8% 50%; }
+      padding: 9.5rem 0 17.5rem 50%; }
       .section-one h2 {
         padding-top: 40%; } }
 
 .section-two {
-  background-image: url("images/texture.jpg");
+  background-image: url("images/texture-mobile.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 1rem 10%; }
+  padding: 1rem 10% 19rem; }
   .section-two button {
     border: 2px solid #ffffff; }
     .section-two button a {
@@ -105,19 +108,27 @@ header {
     color: #ffffff; }
   .section-two p {
     color: #ffffff; }
+  @media (min-width: 768px) {
+    .section-two {
+      padding: 5rem 10% 9rem; } }
   @media (min-width: 1280px) {
     .section-two {
-      padding: 8rem 10%; } }
+      background-image: url("images/texture.jpg");
+      padding: 8rem 10% 12rem; } }
 
 .section-three .section-three__left {
-  background-image: url("images/fit.jpg");
+  background-image: url("images/fit-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 120%;
   width: 100%;
-  padding: 3% 10%;
+  padding: 12rem 10%;
   margin: 0; }
+  @media (min-width: 1200px) {
+    .section-three .section-three__left {
+      background-image: url("images/fit.jpg"); } }
 
 .section-three .section-three__right {
-  padding-left: 10%; }
+  padding: 4rem 10%; }
   .section-three .section-three__right button {
     margin-bottom: 6rem; }
 
@@ -177,7 +188,8 @@ h1 {
   font-size: 4.8rem; }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
+  margin-bottom: 0;
   font-weight: 700; }
   @media (min-width: 768px) {
     h2 {
@@ -190,5 +202,8 @@ h3 {
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0.4rem; }
+
+p {
+  margin-top: 0.6rem; }
 
 /*# sourceMappingURL=styles.css.map */
