@@ -1,28 +1,37 @@
 footer {
 	background-color: #FFA952;
 	color: #ffffff;
-	padding: 10%;
+	padding: 3rem;
 
 	h1 {
 		color: #ffffff;
 	}
 
-	.footer-section {
-		padding: 2rem 0 4rem 0;
+	.footer__menus {
+		display: flex;
+		flex-flow: row wrap;
 
-		nav {
+		.footer__menu {
+			padding: 2rem 0 4rem 0;
+			margin-right: 8rem;
 
-			a {
-				display: block;
-				color: #ffffff;
-				font-size: 1.6rem;
-				line-height: 2.4rem;
+			nav {
+
+				a {
+					display: block;
+					color: #ffffff;
+					font-size: 1.6rem;
+					line-height: 2.4rem;
+				}
 			}
 		}
 	}
 
+	.logo {
+		margin-right: 8rem;
+	}
+
 	@media (min-width: 960px) {
-		padding: 0%;
 		display: flex;
 		justify-content: space-around;
 	}

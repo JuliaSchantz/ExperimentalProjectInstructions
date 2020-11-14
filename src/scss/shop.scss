@@ -21,7 +21,7 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 			border-radius: 20px;
 			width: 315px;
-			margin: 0 1rem 2rem 1rem;
+			margin: 0 auto 2rem;
 			display: block;
 
 			.product__icons__container {
@@ -32,6 +32,10 @@
 				.product__icon {
 					margin: 2rem;
 				}
+			}
+
+			@media (min-width: 820px) {
+				margin: 0 1rem 2rem 1rem;
 			}
 		}
 
