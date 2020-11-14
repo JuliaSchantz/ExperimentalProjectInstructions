@@ -1,0 +1,38 @@
+footer {
+	background-color: #FFA952;
+	color: #ffffff;
+	padding: 3rem;
+
+	h1 {
+		color: #ffffff;
+	}
+
+	.footer__menus {
+		display: flex;
+		flex-flow: row wrap;
+
+		.footer__menu {
+			padding: 2rem 0 4rem 0;
+			margin-right: 8rem;
+
+			nav {
+
+				a {
+					display: block;
+					color: #ffffff;
+					font-size: 1.6rem;
+					line-height: 2.4rem;
+				}
+			}
+		}
+	}
+
+	.logo {
+		margin-right: 8rem;
+	}
+
+	@media (min-width: 960px) {
+		display: flex;
+		justify-content: space-around;
+	}
+}

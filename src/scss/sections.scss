@@ -1,0 +1,107 @@
+.section-one {
+	background-image: url("images/hero-mobile.jpg");
+	background-size: 110%;
+	background-repeat: no-repeat;
+	margin-top: -9rem;
+	padding: 12rem 10% 8rem;
+
+	button {
+		border: 2px solid #ffffff;
+		background-color: rgba(255, 255, 255, 1);
+
+		a {
+
+			@media (min-width: 768px) {
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+	}
+
+	p {
+		color: #ffffff;
+	}
+
+	@media (min-width: 768px) {
+		background-image: url("images/hero.jpg");
+	}
+
+	@media (min-width: 1280px) {
+		padding: 9.5rem 0 17.5rem 50%;
+
+		h2 {
+			padding-top: 40%;
+		}
+	}
+}
+
+.section-two {
+	background-image: url("images/texture-mobile.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 1rem 10% 19rem;
+
+	button {
+		border: 2px solid #ffffff;
+
+		a {
+			color: #ffffff;
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+	}
+
+	p {
+		color: #ffffff;
+	}
+
+	@media (min-width: 768px) {
+		padding: 5rem 10% 9rem;
+	}
+
+	@media (min-width: 1280px) {
+		background-image: url("images/texture.jpg");
+		padding: 8rem 10% 12rem;
+	}
+}
+
+.section-three {
+
+	.section-three__left {
+		background-image: url("images/fit-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: 120%;
+		width: 100%;
+		padding: 12rem 10%;
+		margin: 0;
+
+		@media (min-width: 1200px) {
+			background-image: url("images/fit.jpg");
+		}
+	}
+
+	.section-three__right {
+		padding: 4rem 10%;
+
+		button {
+			margin-bottom: 6rem;
+		}
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+
+		.section-three__left {
+			width: 55%;
+		}
+
+		.section-three__right {
+			width: 45%;
+		}
+	}
+}
